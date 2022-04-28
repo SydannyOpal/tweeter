@@ -7,7 +7,7 @@
   border-left: 0;
   border-right: 0;
   border-bottom: 4px solid black;
-  
+
 }
 .submit-counter-container{
 display: flex;
@@ -23,8 +23,14 @@ button{
   align-items: right;
 
 }
+.text-red {
+  color: darkolivegreen;
+}
+
 .new-tweet-container{
   border: 1px;
   display: block;
   justify-content: space-between;
 }
+
+/* Using jQuery and an appropriate selector, register an event handler to the textarea element for the form inside of the .new-tweet section. */

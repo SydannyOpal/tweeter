@@ -1,10 +1,11 @@
 header{
-  height: 400px;
+  height: 700px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* align-self: auto flex-end; */
   background-color: #004727;
   background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
 }

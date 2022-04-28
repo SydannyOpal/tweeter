@@ -7,11 +7,14 @@ Full width of the viewport
 <span> within the <nav> uses Bungee as its default font-family
 1.5ems of space on the right and left between the content and the edges */
 nav{
+
   height: 120px;
   width: 100%;
   background-color: #8CAE68;
   color:#FFFFFF ;
   padding: 1.5em;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
 }
 nav span{
   font-family: "Bungee";
@@ -21,6 +24,7 @@ nav span{
   justify-content: space-between;
 }
 .icon-container{
+  display: flex;
   text-align: center;
 }
 .new-tweet{
