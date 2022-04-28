@@ -1,0 +1,30 @@
+#tweet-text{
+  width: 100%;
+  background-color: transparent;
+  font-family: serif;
+  outline: 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 4px solid black;
+  
+}
+.submit-counter-container{
+display: flex;
+justify-content: space-between;
+}
+
+button{
+  font-family: Bungee;
+}
+.counter{
+  font-family: Bungee;
+  justify-content: flex-end;
+  align-items: right;
+
+}
+.new-tweet-container{
+  border: 1px;
+  display: block;
+  justify-content: space-between;
+}
