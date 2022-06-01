@@ -30,3 +30,77 @@ body {
    margin: auto;
    background-color: inherit;
  }
+
+
+ /* styling the tweets container
+ */
+
+ #tweets-container {
+   margin: 10px 5px 10px 2px;
+   padding: 5px 17px;
+   min-height: 100px;
+   max-height: 200px;
+   border: 1px grey solid;
+   border-radius: 0px;
+   overflow: scroll;
+ }
+
+ /* styling the header of the tweet
+ */
+ header.tweet-header {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row;
+   max-height: 50px;
+   background-color: white;
+
+
+ }
+
+ .tweet-user {
+  display: flex;
+  justify-content: space-around;
+ }
+
+ .user-handle {
+   color: grey
+ }
+
+ .tweet-body {
+  box-shadow: #545149;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 4px solid black;
+  height: 50px;
+ }
+
+ .tweet-footer {
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+
+
+ }
+
+ .tweet-reactions {
+   justify-content: space-around;
+ }
+ 
+ .tweet-reactions i:hover {
+  color: lightgreen;
+}
+
+
+ .tweets {
+  margin: 10px 5px 10px 2px;
+  padding: 5px 17px;
+  min-height: 100px;
+  border: 1px red solid;
+  /* border-radius: 15px; */
+ }
+ 
+ .tweets:hover {
+  box-shadow:  15px 15px 15px #545149;
+ }
+
