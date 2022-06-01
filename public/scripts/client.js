@@ -83,6 +83,10 @@ $(document).ready(function () {
   $("#tweet-form").on("submit", function (event) {
     event.preventDefault();
 
+    if ($("#tweet-text").val().length > 140) {
+      return alert("Using too many characters");
+    }
+
     $.ajax({
       url: "/tweets",
       type: "POST",
