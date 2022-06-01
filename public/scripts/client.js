@@ -79,13 +79,14 @@ const createTweetElement = function (tweet) {
 
 $(document).ready(function () {
   // renderTweets(data);
-
+  $(".bar").hide();
   $("#tweet-form").on("submit", function (event) {
     event.preventDefault();
 
     if ($("#tweet-text").val().length > 140) {
-      return alert("Using too many characters");
+      return $(".bar").show().text("Too Many Characters!");
     }
+    $(".bar").hide();
 
     $.ajax({
       url: "/tweets",
@@ -94,6 +95,7 @@ $(document).ready(function () {
       success: function (data, textStatus, jqXHR) {
         //data - response from server
         console.log(textStatus);
+        $("#tweet-text").val("");
         loadTweets();
       },
       error: function (jqXHR, textStatus, errorThrown) {},

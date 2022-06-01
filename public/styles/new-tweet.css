@@ -33,4 +33,17 @@ button{
   justify-content: space-between;
 }
 
+.bar {
+  padding: 10px;
+  margin: 10px;
+  color: #333;
+  background: #fafafa;
+  border: 1px solid #ccc;
+}
+
+.error {
+  color: #ba3939;
+  background: #ffe0e0;
+  border: 1px solid #a33a3a;
+}
 /* Using jQuery and an appropriate selector, register an event handler to the textarea element for the form inside of the .new-tweet section. */
