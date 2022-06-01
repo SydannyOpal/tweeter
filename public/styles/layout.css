@@ -52,7 +52,7 @@ body {
    justify-content: space-between;
    flex-direction: row;
    max-height: 50px;
-   background-color: white;
+   /* background-color: white; */
 
 
  }
