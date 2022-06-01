@@ -76,3 +76,52 @@ const createTweetElement = function (tweet) {
   // console.log(tweet_text);
   return tweet_text;
 };
+
+$(document).ready(function () {
+  renderTweets(data);
+
+  $("#tweet-form").on("submit", function (event) {
+    event.preventDefault();
+    
+    $.ajax({
+      url: "/tweets",
+      type: "POST",
+      data: $(this).serialize(),
+      success: function (data, textStatus, jqXHR) {
+        //data - response from server
+        console.log(textStatus);
+        let tweetval = $("#tweet-text").val();
+
+        let text = `     <article class='tweets'>
+          <header class='tweet-header'>
+         
+           <div class='tweet-user'>
+         <img src="https://i.imgur.com/73hZDYK.png">
+            <div>name</div>
+            </div> 
+          <div class='user-handle'>handle</div>
+    
+          </header>
+    
+          <p class='tweet-body'> 
+            ${tweetval}
+          </p>
+    
+          <footer class='tweet-footer'>
+            <div>
+             days ago 
+            </div>
+            <div class= 'tweet-reactions'>
+            <i class="fa-brands fa-font-awesome"></i>
+            <i class="fa-solid fa-repeat"></i>
+            <i class="fa-solid fa-heart"></i>
+            </div>  
+          </footer>
+      </article>
+          `;
+        $("#tweets-container").prepend(text);
+      },
+      error: function (jqXHR, textStatus, errorThrown) {},
+    });
+  });
+});
