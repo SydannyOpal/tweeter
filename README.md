@@ -12,7 +12,7 @@ This repository is the starter code for the project: Students will fork and clon
 4. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
 5. Go to <http://localhost:8080/> in your browser.
 
-### Dependencies
+## Dependencies
 
 - Body Parser
 - Chance
@@ -20,7 +20,7 @@ This repository is the starter code for the project: Students will fork and clon
 - MD5
 - Node 5.10.x or above
 
-## Application Preview
+#### Application Preview
 
-!["Screenshot of Desktop View"] https://github.com/SydannyOpal/tweeter/blob/master/docs/deskTopTweetView.png
-!["Screenshot of Mobile View"] https://github.com/SydannyOpal/tweeter/blob/master/docs/mobileTweetsView.png
+!["Screenshot of Desktop View"](https://github.com/SydannyOpal/tweeter/blob/master/docs/deskTopTweetView.png)
+!["Screenshot of Mobile View"](https://github.com/SydannyOpal/tweeter/blob/master/docs/mobileTweetsView.png)
