@@ -59,12 +59,15 @@ button{
 @media screen and (max-width: 768px) {
   #main-area {
     display: flex;
+    margin-top: auto;
   }
 }
 
 @media screen and (max-height: 1050px) {
   #main-area {
+    margin-top: 350px;
     display: flex;
+
   }
 }
 
