@@ -47,3 +47,24 @@ button{
   border: 1px solid #a33a3a;
 }
 /* Using jQuery and an appropriate selector, register an event handler to the textarea element for the form inside of the .new-tweet section. */
+
+@media screen and (min-width: 1024px){ 
+#main-area {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  #main-area {
+    display: flex;
+  }
+}
+
+@media screen and (max-height: 1050px) {
+  #main-area {
+    display: flex;
+  }
+}
+
+
+}
